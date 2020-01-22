@@ -1,0 +1,61 @@
+{
+  "name": "touchbar-command-palette",
+  "displayName": "Touchbar Command Palette",
+  "description": "Launch command related actions from the from the touchbar, each button can be configured to show or not.",
+  "version": "0.2.0",
+  "publisher": "ashhitch",
+  "engines": {
+    "vscode": "^1.17.0"
+  },
+  "homepage": "https://github.com/ashhitch/vscode-touchbar-command-palette",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ashhitch/vscode-touchbar-command-palette.git"
+  },
+  "bugs": "https://github.com/ashhitch/vscode-touchbar-command-palette/issues",
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "macbook",
+    "touch bar",
+    "touchbar",
+    "vscode",
+    "developers"
+  ],
+  "activationEvents": [
+    "onCommand:extension.touchbarElement"
+  ],
+  "main": "./out/extension",
+  "icon": "icon.png",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.touchbarElement",
+        "title": "Close Folder"
+      }
+    ],
+    "menus": {
+      "touchBar": [
+        {
+          "command": "extension.touchbarElement",
+          "group": "cpcmd"
+        }       
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "npm run compile && node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^2.2.42",
+    "@types/node": "^7.0.43",
+    "typescript": "^2.5.3",
+    "vsce": "^1.32.0",
+    "vscode": "^1.1.5"
+  }
+}
