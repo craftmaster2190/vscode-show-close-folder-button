@@ -1,19 +1,19 @@
 {
-  "name": "touchbar-command-palette",
-  "displayName": "Touchbar Command Palette",
-  "description": "Launch command related actions from the from the touchbar, each button can be configured to show or not.",
-  "version": "0.2.0",
-  "publisher": "ashhitch",
+  "name": "vscode-show-close-folder-button",
+  "displayName": "Close Folder Touchbar Button",
+  "description": "Show the Close Folder button on the Touch Bar",
+  "version": "1.0.0",
+  "publisher": "craftmaster2190",
   "engines": {
     "vscode": "^1.17.0"
   },
-  "homepage": "https://github.com/ashhitch/vscode-touchbar-command-palette",
+  "homepage": "https://github.com/craftmaster2190/vscode-show-close-folder-button",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ashhitch/vscode-touchbar-command-palette.git"
+    "url": "https://github.com/craftmaster2190/vscode-show-close-folder-button.git"
   },
-  "bugs": "https://github.com/ashhitch/vscode-touchbar-command-palette/issues",
   "categories": [
+    "Extension Packs",
     "Other"
   ],
   "keywords": [
@@ -40,7 +40,7 @@
         {
           "command": "extension.touchbarElement",
           "group": "cpcmd"
-        }       
+        }
       ]
     }
   },
@@ -49,7 +49,8 @@
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
     "postinstall": "node ./node_modules/vscode/bin/install",
-    "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    "test": "npm run compile && node ./node_modules/vscode/bin/test",
+    "vs-package": "vsce package"
   },
   "devDependencies": {
     "@types/mocha": "^2.2.42",

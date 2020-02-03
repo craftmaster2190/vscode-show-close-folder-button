@@ -1,51 +1,22 @@
-# Touchbar Command Palette ![CircleCi](https://circleci.com/gh/ashhitch/vscode-touchbar-command-palette.png?circle-token=:circle-token)
+# [Touchbar Close Folder](https://github.com/craftmaster2190/vscode-show-close-folder-button)
 
-Launch command related actions from the from the touchbar, each button can be configured to show or not.
-
-Current list of commands include:
-
-- Command Palette (CMD + p)
-- Quick Open
-- Terminal
-- Sidebar
+Show the Close Folder button on the touch bar.
 
 ![Touchbar Example](touch-bar-demo.jpg)
 
-## Settings
+## Quick Start
+```zsh
+npm install # OR yarn install
+npm run vs-package # OR yarn vs-package
+```
 
-You can choose the buttons by setting the following settings in your user settings
+VSCode 
+	-> Extensions
+	-> ... (Top Right)
+	-> Install from VSIX
+	-> vscode-show-close-folder-button-1.0.0.vsix
 
- "touchbarCommandPalette.commandPalette": (default _true_) Show Command Palette Button
- "touchbarCommandPalette.quickOpen": (default _true_) Show Quick Open Button
- "touchbarCommandPalette.terminal": (default _true_) Show Terminal Toggle Button
- "touchbarCommandPalette.sidebar": (default _false_) Show Sidebar Toggle Button
+#### Misc
+Initially forked from: (https://github.com/ashhitch/vscode-touchbar-command-palette)
 
-## Known Issues
-
-Please report any issues via github
-
-## Future Plans
-
-Use Icons instead of text labels
-
-## Release Notes
-
-### 0.2.0
-
-Now included abbility to show hide sidebar and terminal, slight rename to allow future helpful commands.
-
-### 0.1.0
-
-Now included abbility to show hide buttons
-
-### 0.0.1
-
-Initial release of extension
-
- ## Author
- [Ash Hitchcock](https://www.ashleyhitchcock.com)
-
- ## Contributors
-Want to help imporove this plugin? See Open a pull request 😃
-
-**Enjoy!**
+<div>Icons made by <a href="https://www.flaticon.com/authors/icongeek26" title="Icongeek26">Icongeek26</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
